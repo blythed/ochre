@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ochre"
+description = "Declarative and compositional pipelines in Python"
+readme = "README.md"
+version = '0.0.1'
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = [
+    "click",
+    "typer"
+    "dill",
+    "dotenv",
+    "rich",
+    "pytest",
+    "python-crontab",
+    "python-dotenv"
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["ochre*"]
+
+[project.scripts]
+ochre = "ochre.__main__:app"
+

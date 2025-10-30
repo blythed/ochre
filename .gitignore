@@ -1,0 +1,12 @@
+/*.egg-info
+*__pycache__/
+*egg-info
+/*.pyc
+/registry
+/.chromadb
+/.tmp
+/data
+/.vscode
+/.secrets
+/.env
+/crontab.txt
